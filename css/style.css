@@ -1,0 +1,291 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    background-color:   rgba(0, 0, 0, 0.767);
+    align-items: center;
+    /* position: sticky; */
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('../assets/jpeg/bg1.jpg') no-repeat center center/cover;  
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:1;
+}
+
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+}
+
+#services .box button{
+    width: 10rem;
+    font-family: 'Bree Serif', serif;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    /* padding-bottom: 34px; */
+    background: #0062b9;
+    color: #fff;
+    font-style: bold;
+    margin: 4px 51px;
+}
+.Click:hover{
+    color: red;
+    background-color: yellow;
+    cursor: pointer;
+    }
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 980px){
+    #services .box button{
+    width: 5rem;
+    font-family: 'Bree Serif', serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: #0062b9;
+    color: #fff;
+    font-style: bold;
+    margin: 4px 110px;
+    
+    }
+}
+/*--------------------------------------------------------------*/
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact button{
+    
+    width: 10rem;
+    font-family: 'Bree Serif', serif;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    /* padding-bottom: 34px; */
+    background: #0062b9;
+    color: #fff;
+    font-style: bold;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: green;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    color: white;
+    background-color: red;
+}
+
+.center{
+    text-align: center;
+}
+.main-footer {
+    background: #000;
+    color: #fff; }
+    /* .main-footer__upper {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0; }
+      @media only screen and (max-width: 56.25em) {
+        .main-footer__upper {
+          padding: 6rem 0; } }
+      @media only screen and (max-width: 37.5em) {
+        .main-footer__upper {
+          display: block; } }
+    .main-footer__row-1 {
+      order: 2; }
+      @media only screen and (max-width: 56.25em) {
+        .main-footer__row-1 {
+          margin-bottom: 5rem; } }
+    .main-footer__row-2 {
+      width: 40%;
+      order: 1;
+      max-width: 50rem; }
+      @media only screen and (max-width: 56.25em) {
+        .main-footer__row-2 {
+          width: 100%; } }
+    .main-footer__short-desc {
+      margin-top: 2rem;
+      color: #eee;
+      font-size: 1.5rem;
+      line-height: 1.7; } */
+    .main-footer__social-cont {
+      margin-top: 2rem; 
+      margin : -51px 36px;
+    }
+    .main-footer__icon {
+      margin-left: 0rem;
+      width: 2.5rem; }
+      .main-footer__icon--mr-none {
+        margin-right: 0; }
+    .main-footer__lower {
+      padding: 1rem 0;
+      border-top: 1px solid white;
+      color: #eee;
+      font-size: 1.2rem;
+      text-align: left;
+      text-align: center; }
+      .main-footer__lower a {
+        columns: white;
+        text-decoration: underline;
+        font-weight: bold;
+        margin-left: 2px solid white; }
+      @media only screen and (max-width: 56.25em) {
+        .main-footer__lower {
+          padding: 3.5rem 0; } }
+
+         

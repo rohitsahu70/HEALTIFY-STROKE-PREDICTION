@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brain Stroke</title>
+    <link rel="icon" href="..\static\logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<style>
+  /* CSS Reset */
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+
+html{ scroll-behavior: smooth; font-family: "Lucida Sans", sans-serif;}
+
+/* CSS Variables */
+:root{ --navbar-height: 59px; }
+
+
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Bree Serif', serif;
+  }
+  html,body,header,#intro {
+  height: 100%;
+  }
+  img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  }
+  .dropdown{
+    width:100%;
+  }
+
+li a, p{
+    text-align: left;
+    /* font-family: 'Baloo Bhai'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+  
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    
+  }
+  
+  li {
+    float: right;
+    margin: 10px;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(228, 222, 222);
+    color: black;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f0ebeb;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: black; color: white;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* NAVBAR */
+.navb li{
+  font-family:  'Baloo Bhai' ;
+  font-size: 25px;
+}
+
+
+/*==============================================================*/
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  
+  .header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+  }
+  
+  
+  .aside {
+    background-color: white;
+    padding: 15px;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    
+  }
+  
+  .footer {
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+  }
+  
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 1170px) {
+    /* Home section */
+#home{
+    height: 370px; 
+    padding: 3px 28px;
+}
+
+#home::before{
+    height: 480px; 
+}
+
+/* Services section  */
+#services{
+    flex-direction: column;
+}
+
+/* Utility classes */
+.h-primary{
+    font-size:26px;
+}
+
+/* Contact us section */
+#contact-box form{
+    width:80%;
+}
+  }
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  
+  .fixed a{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 12rem;
+    font-family:'Baloo Bhai', cursive;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background: #0062b9;
+    color: rgb(226, 216, 216);
+    font-style: bold;
+    margin: 4px;
+    padding: 0px;   
+    border: 2px solid black;
+  }
+
+  .fixed a:hover{
+    color: rgb(224, 67, 67);
+    background-color: yellow;
+    cursor: pointer;
+  }
+  
+
+</style>
+<body>
+  <ul class="navb">
+    <p font-family style="color: white;  font-family:  'Baloo Bhai' ; float: left; margin: 30px;">HEALTHBAY</p>
+    <li class="navb"><a href="https://healthway-daignosis-application.netlify.app/">Back</a></li>
+    <li class="navb"><a href="#">Contact</a></li>
+    <li><a href="#">services</a></li>
+    <li><a href="https://healthway-daignosis-application.netlify.app/">Home</a></li>
+  </ul>
+  <br>
+    <h1>Test Report : </h1>
+    <br>
+    <div class="results">
+		{% if prediction==1 %}
+		<h3><span class='danger'>Oops! 😞 you have chances of getting <strong>Brain-Stroke</strong> Please consult with doctor</span></h3> 
+		{% elif prediction==0 %}
+		<h3><span class='safe'>Great! 🙂 You don't have chances of getting <strong>Brain-Stroke</strong></span></h3>
+		{% endif %} 
+	</div>
+<div class="footer" style="margin: 472px 0;">
+  <p class="footer-links">
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </p>
+  <p>&copy; Copyright 2021. Made with ❤️ by <strong>Rohit Sahu</strong>.</p>
+</div>
+</body>
+</html>
+
+
+		
+
+
+				
+
+		
+
+
+
