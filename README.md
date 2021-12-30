@@ -22,7 +22,7 @@ dataset were used from kaggle.
 
 - [Brain Stroke Dataset](https://www.kaggle.com/fedesoriano/stroke-prediction-dataset)
 
-## Live Video of Attendance System
+## Live Video 
 
 
 
