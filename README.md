@@ -21,3 +21,12 @@ This web app was developed using Flask Web Framework and was deployed on Heroku 
 dataset were used from kaggle.
 
 - [Brain Stroke Dataset](https://www.kaggle.com/fedesoriano/stroke-prediction-dataset)
+
+## Live Video of Attendance System
+
+
+
+
+
+https://user-images.githubusercontent.com/89459208/147747586-05f96da3-52da-4bec-b26e-21b17a873548.mp4
+
