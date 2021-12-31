@@ -2,7 +2,7 @@
 
 ## About
 
-This web app was developed using Flask Web Framework and was deployed on Heroku server. The models used to predict the Brain Stroke were trained on large Datasets. All the links for datasets and the python notebooks used for model creation are mentioned below in this readme. The webapp can predict following Diseases:
+it is a stroke prediction application that is working on the basis of client data .and gives you the output, and we are taking the data for training the model from Kaggle and its a data of private hospital basically it is in the raw form so firstly we have to convert the data into a proper format so then we can fit our data into the prediction model.
 
 ## Model with their Accuracy of Prediction
 
