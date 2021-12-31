@@ -1,4 +1,4 @@
-# HealthBay Daignosis Application
+# healthify-stroke-prediction
 
 ## About
 
