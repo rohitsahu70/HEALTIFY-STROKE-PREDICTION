@@ -29,11 +29,11 @@ dataset were used from kaggle.
 
 - [Brain Stroke Dataset](https://www.kaggle.com/fedesoriano/stroke-prediction-dataset)
 
+## Work Flow
+
+![Blank diagram](https://user-images.githubusercontent.com/89459208/151712181-db4c4f9b-b4f0-4021-8764-a13822c34b69.jpeg)
+
 ## Live Video 
-
-
-
-
 
 https://user-images.githubusercontent.com/89459208/147747586-05f96da3-52da-4bec-b26e-21b17a873548.mp4
 
